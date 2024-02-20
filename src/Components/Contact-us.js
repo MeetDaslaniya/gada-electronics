@@ -35,7 +35,7 @@ const Contactus = () => {
             placeholder="Write something.."
           ></textarea>
 
-          <input type="submit" value="Submit" />
+          <input className="button1" type="submit" value="Submit" />
         </form>
       </div>
     </div>

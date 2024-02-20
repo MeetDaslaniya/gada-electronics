@@ -1,3 +1,4 @@
+
 .imgcontainer {
   /* border: 2px solid black; */
   width: 100%;
@@ -62,6 +63,7 @@ textarea {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  /* margin-bottom: 20px; */
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -88,6 +90,7 @@ textarea {
 }
 .imgcontainer-1 {
   margin-top: 40px;
+  width: 100%;
 }
 .about-us-img {
   width: 100%;
@@ -121,6 +124,7 @@ html {
 .card1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  background-color: white;
   color: #000;
 }
 
@@ -171,7 +175,7 @@ html {
 }
 
 /* On mouse-over, add a deeper shadow */
-
+/* ----------------------------------------------------------- */
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
@@ -200,9 +204,9 @@ html {
   background-color: rgb(17, 97, 73);
   box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
 }
-
+/* -------------------------------------------- */
 .img-product {
-  /* border: 2px solid black; */
+  border: 2px solid black;
   /* display: block; */
   vertical-align: middle;
   height: 15rem;
@@ -210,14 +214,29 @@ html {
   object-fit: fill;
 }
 
-.card {
+/* .card {
   display: block;
   width: 30%;
   border: 2px solid black;
-  transition: 0.3s;
-  padding: 5px;
-}
+  
+} */
 
 .card:hover {
   box-shadow: 5px 5px 5px rgb(47, 45, 45);
+}
+
+.card-outer
+{
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3,minmax(500px,1fr));
+  
+}
+.card{
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card-text{
+  border: 2px solid black;
 }
