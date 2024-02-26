@@ -7,24 +7,23 @@ import Cart from "./Components/Cart";
 import Header from "./Components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
-  return( <div className="App">
-    <BrowserRouter>
-      <Header/>
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Header />
         <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path='/aboutus' element={<Aboutus/>}/>
-          
-          <Route path='/contectus' element={<Contactus/>}/>
-          <Route path='/cart' element={<Cart/>}/>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+
+          <Route path="/contectus" element={<Contactus />} />
+          <Route path="/cart" element={<Cart />} />
           {/* <Route path='/paynow' element={<Paynow/>}/> */}
-          <Route path='/wishlist' element={<Wishlist/>}/>
-          {/* <Route path='/login' element={<Login/>}/> */}
-          
-          {/* <Route path='/product/:id' element={<Product/>}/> */}
+          <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
-      {/* <Footer/> */}
+        {/* <Footer/> */}
       </BrowserRouter>
-  </div>);
+    </div>
+  );
 }
 
 export default App;
